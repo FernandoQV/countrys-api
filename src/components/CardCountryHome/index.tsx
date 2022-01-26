@@ -12,7 +12,7 @@ const CardCountryHome = ({ country }: Props) => {
     const link=country.name.common.toLowerCase()
   return (
     <LinkBox>
-      <Stack direction={"column"}>
+      <Stack direction={"column"} boxShadow={'md'} _hover={{boxShadow:'lg'}} height={'full'}>
         <Image
           src={country.flags.png}
           alt={country.name.common}
