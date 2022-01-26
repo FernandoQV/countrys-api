@@ -7,7 +7,7 @@ interface Props {
   }
 const ListCountries = ({countries}:Props) => {
   return <SimpleGrid as='section' padding={12} minChildWidth={'200px'} gap={12}>
-  {countries.map((country) => (
+  {Boolean(countries.length)&& countries.map((country) => (
     <GridItem key={country.name.common}>
       <CardCountryHome country={country} />
     </GridItem>
